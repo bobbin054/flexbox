@@ -1,0 +1,20 @@
+.app {
+  
+  &--container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+    background-color: green;
+    border: thick solid rgb(1, 65, 1);
+  }
+
+  &--item {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+
+    height: 100px;
+    background-color: red;
+    border: thick solid rgb(65, 1, 1);
+  }
+}

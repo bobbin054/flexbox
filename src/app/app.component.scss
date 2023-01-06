@@ -1,19 +1,13 @@
 .app {
-  
-  &--container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px;
+  background-color: green;
+  border: thick solid rgb(1, 65, 1);
+  &__item {
     display: flex;
-    justify-content: space-evenly;
-    height: 200px;
-    background-color: green;
-    border: thick solid rgb(1, 65, 1);
-  }
-
-  &--item {
-    display: flex;
-    justify-content: space-evenly;
-    width: 30%;
-
-    height: 100px;
+    align-items: center;
     background-color: red;
     border: thick solid rgb(65, 1, 1);
   }

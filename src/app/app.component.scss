@@ -1,13 +1,20 @@
 .app {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 200px;
-  background-color: green;
-  border: thick solid rgb(1, 65, 1);
-  &__item {
+  &__row-container {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    background-color: green;
+    border: thick solid rgb(1, 65, 1);
+  }
+  &__column-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: green;
+    border: thick solid rgb(1, 65, 1);
+  }
+  &__item {
     background-color: red;
     border: thick solid rgb(65, 1, 1);
   }

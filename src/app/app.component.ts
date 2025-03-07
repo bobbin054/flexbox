@@ -1,9 +1,13 @@
-import { Component, VERSION } from '@angular/core';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { FlexDivsComponent } from "./flex-divs/flex-divs.component";
 
 @Component({
-  selector: 'app-app',
+  selector: 'app-root',
+  imports: [RouterOutlet, FlexDivsComponent],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  standalone: true,
+  styleUrl: './app.component.scss'
 })
-export class AppComponent {}
+export class AppComponent {
+  title = 'flex_tester';
+}

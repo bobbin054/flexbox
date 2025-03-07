@@ -4,23 +4,22 @@
     class="grid gap-x-2 items-center justify-center"
     style="
       display: grid;
-      grid-template-columns: auto auto auto auto;
       grid-template-areas:
         'sales version dryrun .'
         'sales-input version-input dryrun-input search';
     "
   >
     <!-- Labels Row -->
-    <label class="text-left" style="grid-area: sales">Sales Code</label>
-    <label class="text-left" style="grid-area: version">Version Code</label>
-    <label class="text-center" style="grid-area: dryrun">Dryrun</label>
+    <label style="grid-area: sales">Sales Code</label>
+    <label style="grid-area: version">Version Code</label>
+    <label style="grid-area: dryrun">Dryrun</label>
 
     <!-- Inputs Row -->
     <select class="border" style="grid-area: sales-input">
-      <option>Option 1</option>
+      <option>Sale Option 1</option>
     </select>
     <select class="border" style="grid-area: version-input">
-      <option>Option 1</option>
+      <option>Version Option 1</option>
     </select>
     <input type="checkbox" class="border h-5" style="grid-area: dryrun-input" />
     <button class="border" style="grid-area: search">Search</button>

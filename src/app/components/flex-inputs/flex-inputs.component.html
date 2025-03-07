@@ -1,0 +1,28 @@
+<div class="flex flex-column gap-2">
+  <label for="sales_code_input" class="m-0">Sales Code</label>
+  <select
+    id="sales_code_input"
+    [(ngModel)]="selectedSaleVersionCode.salesCode"
+    name="salesCode"
+  >
+    @for (salesCode of allSalesCodes; track $index) {
+    <option value="{{ salesCode }}">
+      {{ salesCode }}
+    </option>
+    }
+  </select>
+</div>
+<div class="flex flex-column gap-2">
+  <label for="version_code_input" class="m-0">Version Code</label>
+  <select
+    id="version_code_input"
+    [(ngModel)]="selectedSaleVersionCode.versionCode"
+    name="versionCode"
+  >
+    @for (versionCode of allVersionCodes; track $index) {
+    <option value="{{ versionCode }}">
+      {{ versionCode }}
+    </option>
+    }
+  </select>
+</div>

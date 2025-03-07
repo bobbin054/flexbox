@@ -24,13 +24,17 @@
     "@angular/platform-browser": "^19.0.4",
     "@angular/platform-browser-dynamic": "^19.0.4",
     "@angular/router": "^19.0.4",
-    "chokidar": "^4.0.0",
-    "rxjs": "~7.5.0",
-    "tslib": "^2.3.0",
-    "typescript": ">=5.5 <5.9",
-    "zone.js": "~0.11.4"
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "@marko/compiler": "^5",
+    "@prettier/plugin-pug": "^3.2.1",
+    "@shopify/prettier-plugin-liquid": "^1.8.3",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@vue/compiler-sfc": "2.7.x || 3.x 3.x",
+    "@zackad/prettier-plugin-twig": "^0.15.3",
+    "chokidar": "^4.0.0"
   },
   "devDependencies": {
+    "prettier": "^3.5.3",
     "@angular-devkit/build-angular": "^19.0.4",
     "@angular/cli": "^19.0.4",
     "@angular/compiler-cli": "^19.0.4",

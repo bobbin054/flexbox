@@ -1,28 +1,28 @@
-<div class="flex flex-column gap-2">
-  <label for="sales_code_input" class="m-0">Sales Code</label>
-  <select
-    id="sales_code_input"
-    [(ngModel)]="selectedSaleVersionCode.salesCode"
-    name="salesCode"
+<div class="border-2">
+  Could not solve with flex. Used grid.
+  <div
+    class="grid gap-1 items-center justify-center"
+    style="
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-areas:
+        'sales version dryrun .'
+        'sales-input version-input dryrun-input search';
+    "
   >
-    @for (salesCode of allSalesCodes; track $index) {
-    <option value="{{ salesCode }}">
-      {{ salesCode }}
-    </option>
-    }
-  </select>
-</div>
-<div class="flex flex-column gap-2">
-  <label for="version_code_input" class="m-0">Version Code</label>
-  <select
-    id="version_code_input"
-    [(ngModel)]="selectedSaleVersionCode.versionCode"
-    name="versionCode"
-  >
-    @for (versionCode of allVersionCodes; track $index) {
-    <option value="{{ versionCode }}">
-      {{ versionCode }}
-    </option>
-    }
-  </select>
+    <!-- Labels Row -->
+    <label class="text-left" style="grid-area: sales">Sales Code</label>
+    <label class="text-left" style="grid-area: version">Version Code</label>
+    <label class="text-center" style="grid-area: dryrun">Dryrun</label>
+
+    <!-- Inputs Row -->
+    <select class="border" style="grid-area: sales-input">
+      <option>Option 1</option>
+    </select>
+    <select class="border" style="grid-area: version-input">
+      <option>Option 1</option>
+    </select>
+    <input type="checkbox" class="border" style="grid-area: dryrun-input" />
+    <button class="border" style="grid-area: search">Search</button>
+  </div>
 </div>

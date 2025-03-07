@@ -3,7 +3,7 @@ import { Component, VERSION } from '@angular/core';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
-  styleUrls: [ './app.component.scss' ]
+  styleUrls: ['./app.component.scss'],
+  standalone: true,
 })
-export class AppComponent  {
-}
+export class AppComponent {}

@@ -5,23 +5,42 @@
     style="
       display: grid;
       grid-template-areas:
-        'sales version dryrun .'
-        'sales-input version-input dryrun-input search';
+        'sales_code_input_label version_code_input_label dryrun_input_label .'
+        'sales_code_input version_code_input dryrun_input search_button';
     "
   >
     <!-- Labels Row -->
-    <label style="grid-area: sales">Sales Code</label>
-    <label style="grid-area: version">Version Code</label>
-    <label style="grid-area: dryrun">Dryrun</label>
+    <label for="sales_code_input" style="grid-area: sales_code_input_label"
+      >Sales Code</label
+    >
+    <label for="version_code_input" style="grid-area: version_code_input_label"
+      >Version Code</label
+    >
+    <label for="dryrun_input" style="grid-area: dryrun_input_label"
+      >Dryrun</label
+    >
 
     <!-- Inputs Row -->
-    <select class="border" style="grid-area: sales-input">
+    <select
+      id="sales_code_input"
+      class="border"
+      style="grid-area: sales_code_input"
+    >
       <option>Sale Option 1</option>
     </select>
-    <select class="border" style="grid-area: version-input">
+    <select
+      id="version_code_input"
+      class="border"
+      style="grid-area: version_code_input"
+    >
       <option>Version Option 1</option>
     </select>
-    <input type="checkbox" class="border h-5" style="grid-area: dryrun-input" />
-    <button class="border" style="grid-area: search">Search</button>
+    <input
+      id="dryrun_input"
+      type="checkbox"
+      class="border h-5"
+      style="grid-area: dryrun_input"
+    />
+    <button class="border" style="grid-area: search_button">Search</button>
   </div>
 </div>
